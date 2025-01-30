@@ -79,7 +79,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="mt-8 text-center text-base text-gray-500">
-            &copy; {new Date().getFullYear()} Tech Charity. All rights reserved.
+            &copy; {new Date().getFullYear()} AmiTech Charity. All rights reserved.
           </p>
         </div>
       </div>
