@@ -126,7 +126,7 @@ function PaymentForm() {
           <div className="overflow-hidden rounded-md bg-white">
             <div className="p-6 sm:p-10">
               <p className="mt-4 text-base text-gray-600">
-                Provide your name, mpesa number and amount to process donation.
+                Provide your name, mpesa number and amount to process your contributions.
               </p>
               <form onSubmit={handleSubmit} className="mt-4">
                 <div className="space-y-6">
