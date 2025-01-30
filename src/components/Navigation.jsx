@@ -25,13 +25,13 @@ export default function Navigation() {
           <div className="flex">
             <Link href="/" className="flex shrink-0 items-center">
               <Image
-                src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=60&auto=format&fit=crop"
+                src="/Amitech.png"
                 alt="Tech Charity Logo"
                 width={40}
                 height={40}
                 className="rounded-full"
               />
-              <span className="ml-3 text-xl font-bold text-orange-600">Tech Charity</span>
+              <span className="ml-3 text-xl font-bold text-orange-600">AmiTech Charity</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               {navigation.map((item) => {
