@@ -167,7 +167,7 @@ function PaymentForm() {
                             mpesa_phone: e.target.value,
                           })
                         }
-                        placeholder="e.g., 0712345678"
+                        placeholder="e.g., +254712345678"
                         className="block w-full rounded-md border border-gray-200 bg-white px-4 py-4 text-black placeholder-gray-500 caret-orange-500 transition-all duration-200 focus:border-orange-500 focus:outline-none focus:ring-orange-500"
                       />
                     </div>
