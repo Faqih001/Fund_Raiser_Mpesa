@@ -80,12 +80,13 @@ export default function HomePage() {
           <div className="animate-on-scroll opacity-0 transition-all duration-1000 ease-out">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Our Impact
+                Driving Change, Empowering Communities  
               </h2>
-              <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                Together, we're making a difference in communities across Kenya.
+              <p className="mt-3 text-lg text-gray-600 sm:mt-4">
+                Through technology and innovation, we're transforming lives and creating opportunities across Kenya.  
               </p>
             </div>
+
             <dl className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
               <div className="flex flex-col">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">Students Reached</dt>
@@ -110,12 +111,13 @@ export default function HomePage() {
           <div className="animate-on-scroll opacity-0 transition-all duration-1000 ease-out">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Our Programs
+                Transforming Lives Through Technology
               </h2>
-              <p className="mt-3 text-xl text-gray-500 sm:mt-4">
-                Discover how we're making technology accessible to everyone.
+              <p className="mt-3 text-lg text-gray-600 sm:mt-4">
+                Explore our innovative programs designed to bridge the digital divide, empower communities, and unlock new opportunities.
               </p>
             </div>
+
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {/* Program Cards */}
               {[
