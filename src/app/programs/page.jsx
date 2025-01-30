@@ -56,6 +56,18 @@ const faqs = [
   {
     question: 'How can I apply?',
     answer: 'You can apply through our website by filling out a simple registration form for your desired program.'
+  },
+  {
+    question: 'Do you provide certificates?',
+    answer: 'Yes! Participants who complete a program successfully receive a certification that can be used for job applications and professional development.'
+  },
+  {
+    question: 'Can kids join these programs?',
+    answer: 'Yes! We have special programs tailored for children and teenagers to help them get started in technology early.'
+  },
+  {
+    question: 'Is there a mentorship program?',
+    answer: 'Yes, our Innovation Hub provides mentorship programs where industry experts guide participants through real-world projects.'
   }
 ];
 
@@ -63,23 +75,25 @@ export default function ProgramsPage() {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="bg-gradient-to-b from-blue-50 to-pink-50 py-16">
       {/* Hero Section */}
-      <div className="text-center max-w-3xl mx-auto px-6">
+      <div className="text-center max-w-3xl mx-auto px-6 p-12">
         <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-          Explore Our Programs
+          🌟 Explore Our Programs 🌟
         </h1>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-gray-700">
           We provide hands-on tech training, innovation spaces, and community-driven digital empowerment.
         </p>
       </div>
 
       {/* Programs Section */}
-      <div className="mt-16 max-w-6xl mx-auto px-6 space-y-20">
+      <div className="mt-16 max-w-6xl mx-auto px-6 space-y-16">
         {programs.map((program, index) => (
           <div
             key={program.title}
-            className="flex flex-col lg:flex-row items-center gap-12"
+            className={`flex flex-col lg:flex-row items-center gap-12 p-6 rounded-xl shadow-lg ${
+              index % 2 === 0 ? 'bg-blue-100' : 'bg-pink-100'
+            }`}
           >
             {/* Image */}
             <div className="relative w-full lg:w-1/2 h-64 sm:h-80">
@@ -94,12 +108,12 @@ export default function ProgramsPage() {
             {/* Text Content */}
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-semibold text-gray-900">{program.title}</h2>
-              <p className="mt-3 text-gray-600">{program.description}</p>
-              <ul className="mt-6 space-y-2 text-gray-700">
+              <p className="mt-3 text-gray-700">{program.description}</p>
+              <ul className="mt-6 space-y-3 text-gray-800">
                 {program.features.map((feature, i) => (
                   <li key={i} className="flex items-center">
                     <svg
-                      className="h-5 w-5 text-orange-500"
+                      className="h-5 w-5 text-pink-500"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -118,16 +132,16 @@ export default function ProgramsPage() {
         ))}
       </div>
 
-      {/* FAQ Section with Animation */}
+      {/* FAQ Section with Colorful Animation */}
       <div className="mt-24 max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900 text-center">
-          Frequently Asked Questions
-        </h2>
+        <h2 className="text-3xl font-bold text-gray-900 text-center">❓ Frequently Asked Questions ❓</h2>
         <div className="mt-8 space-y-4">
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="bg-white shadow-md rounded-xl"
+              className={`rounded-xl shadow-lg p-4 ${
+                index % 2 === 0 ? 'bg-yellow-100' : 'bg-green-100'
+              }`}
               whileHover={{ scale: 1.02 }}
             >
               <button
@@ -140,7 +154,7 @@ export default function ProgramsPage() {
                   animate={{ rotate: openFAQ === index ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  ▼
+                  ⬇
                 </motion.span>
               </button>
               <motion.div
@@ -149,7 +163,7 @@ export default function ProgramsPage() {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden"
               >
-                <p className="px-6 pb-4 text-gray-600">{faq.answer}</p>
+                <p className="px-6 pb-4 text-gray-700">{faq.answer}</p>
               </motion.div>
             </motion.div>
           ))}
