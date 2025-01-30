@@ -3,7 +3,7 @@
 
 export default function PaymentsPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 pt-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 text-center leading-tight">
           Streamline Your Finances with M-Pesa Payments
