@@ -49,7 +49,7 @@ export default function Footer() {
               <li className="text-base text-gray-600">
                 <span className="block">Phone:</span>
                 <a href="tel:+254700000000" className="hover:text-orange-600">
-                  +254 700 000 000
+                  +254 741 140 250
                 </a>
               </li>
             </ul>
