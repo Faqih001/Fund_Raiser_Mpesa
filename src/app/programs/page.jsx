@@ -28,7 +28,7 @@ const programs = [
   {
     title: 'Tech for Communities',
     description: 'Bridging the digital divide by making technology accessible through outreach programs, mobile labs, and digital literacy workshops.',
-    image: 'https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=800&auto=format&fit=crop',
+    image: '/community.jpg',
     features: [
       'Mobile tech labs in remote areas',
       'Inclusive digital training for all ages',
