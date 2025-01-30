@@ -39,12 +39,13 @@ export default function HomePage() {
                   <div>
                     <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                       <span className="block text-orange-600 xl:inline">Empowering</span>{' '}
-                      <span className="block xl:inline">Communities Through Technology</span>
+                      <span className="block xl:inline">Communities Through Innovation</span>
                     </h1>
-                    <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                      Join us in our mission to bridge the digital divide and create opportunities
-                      for underserved communities through technology education and resources.
+                    <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                      Bridging the digital divide by equipping underserved communities with cutting-edge 
+                      technology, education, and opportunities for a brighter future.
                     </p>
+
                     <div className="mt-8 sm:mt-12">
                       <Link
                         href="/donate"
