@@ -89,15 +89,15 @@ export default function HomePage() {
             <dl className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
               <div className="flex flex-col">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">Students Reached</dt>
-                <dd className="order-1 text-5xl font-bold tracking-tight text-orange-600">5,000+</dd>
+                <dd className="order-1 text-5xl font-bold tracking-tight text-orange-600">2,500+</dd>
               </div>
               <div className="mt-10 flex flex-col sm:mt-0">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">Communities Served</dt>
-                <dd className="order-1 text-5xl font-bold tracking-tight text-orange-600">20+</dd>
+                <dd className="order-1 text-5xl font-bold tracking-tight text-orange-600">17+</dd>
               </div>
               <div className="mt-10 flex flex-col sm:mt-0">
                 <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">Success Rate</dt>
-                <dd className="order-1 text-5xl font-bold tracking-tight text-orange-600">95%</dd>
+                <dd className="order-1 text-5xl font-bold tracking-tight text-orange-600">96%</dd>
               </div>
             </dl>
           </div>
@@ -121,17 +121,17 @@ export default function HomePage() {
               {[
                 {
                   title: 'Tech Education',
-                  description: 'Providing quality technology education to underserved communities.',
+                  description: 'Empowering underserved communities with quality technology education, equipping them for the future.',
                   icon: '🎓'
                 },
                 {
                   title: 'Digital Literacy',
-                  description: 'Teaching essential digital skills for the modern workforce.',
+                  description: 'Equipping individuals with essential digital skills to thrive in the modern workforce.',
                   icon: '💻'
                 },
                 {
                   title: 'Innovation Hub',
-                  description: 'Creating spaces for technological innovation and creativity.',
+                  description: 'Fostering creativity and innovation through technology workshops, hackathons, and more.',
                   icon: '🚀'
                 }
               ].map((program) => (
