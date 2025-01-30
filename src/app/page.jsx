@@ -29,47 +29,56 @@ export default function HomePage() {
   return (
     <div className="bg-white pt-16">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-100 to-orange-50" />
-        <div className="relative pt-6 pb-16 sm:pb-24">
-          <main className="mt-16 sm:mt-24">
-            <div className="mx-auto max-w-7xl">
-              <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-                <div className="px-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
-                  <div>
-                    <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                      <span className="block text-orange-600 xl:inline">Empowering</span>{' '}
-                      <span className="block xl:inline">Communities Through Innovation</span>
-                    </h1>
-                    <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                      Bridging the digital divide by equipping underserved communities with cutting-edge 
-                      technology, education, and opportunities for a brighter future.
-                    </p>
+    <div className="relative overflow-hidden">
+        {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-200 via-orange-100 to-orange-50 opacity-90" />
 
-                    <div className="mt-8 sm:mt-12">
-                      <Link
-                        href="/donate"
-                        className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                      >
-                        Donate Now
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-16 sm:mt-24 lg:col-span-6 lg:mt-0">
-                  <div className="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
-                    <div className="relative h-64 sm:h-72 md:h-96 lg:h-full">
-                      <Image
-                        src="/Tech.jpg"
-                        alt="Tech education"
-                        fill
-                        priority
-                        className="object-cover rounded-lg shadow-xl"
-                      />
-                    </div>
-                  </div>
+        {/* Content Wrapper */}
+        <div className="relative z-10 pt-12 pb-20 sm:pb-28 lg:pb-32">
+          <main className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-16">
+            <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+              
+              {/* Left Content - Title & Text */}
+              <div className="lg:col-span-6 text-center lg:text-left">
+                <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                  <span className="block text-orange-600">Empowering</span>{' '}
+                  <span className="block">Communities Through Innovation</span>
+                </h1>
+                <p className="mt-4 text-lg text-gray-700 sm:mt-6 sm:text-xl lg:text-lg xl:text-xl">
+                  Bridging the digital divide by equipping underserved communities with cutting-edge 
+                  technology, education, and opportunities for a brighter future.
+                </p>
+
+                {/* CTA Buttons */}
+                <div className="mt-8 flex flex-col sm:flex-row sm:justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+                  <Link
+                    href="/donate"
+                    className="inline-flex items-center justify-center rounded-lg bg-orange-600 px-6 py-3 text-lg font-medium text-white shadow-lg transition-transform transform hover:scale-105 hover:bg-orange-700 focus:outline-none focus:ring-4 focus:ring-orange-400"
+                  >
+                    Donate Now
+                  </Link>
+                  <Link
+                    href="/programs"
+                    className="inline-flex items-center justify-center rounded-lg border border-orange-600 px-6 py-3 text-lg font-medium text-orange-600 shadow-lg transition-transform transform hover:scale-105 hover:bg-orange-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-orange-400"
+                  >
+                    Explore Programs
+                  </Link>
                 </div>
               </div>
+
+              {/* Right Content - Image */}
+              <div className="mt-12 lg:mt-0 lg:col-span-6">
+                <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+                  <Image
+                    src="/Innovation.jpg"
+                    alt="Tech education"
+                    fill
+                    priority
+                    className="object-cover rounded-xl shadow-2xl"
+                  />
+                </div>
+              </div>
+
             </div>
           </main>
         </div>
