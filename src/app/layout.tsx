@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tech Charity - Empowering Through Technology",
-  description: "Support our mission to empower communities through technology.",
+  title: 'AmiTech Charity - Bridging Gaps, Empowering Futures',
+  description: 'Join us in revolutionizing communities with accessible tech education, resources, and opportunities that drive sustainable change and growth.',
 };
 
 export default function RootLayout({
