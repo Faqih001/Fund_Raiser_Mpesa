@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'AmiTech Charity - Bridging Gaps, Empowering Futures',
-  description: 'Support our mission to empower communities through technology.',
+  description: 'Join us in revolutionizing communities with accessible tech education, resources, and opportunities that drive sustainable change and growth.',
 };
 
 export default function RootLayout({ children }) {
