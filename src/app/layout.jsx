@@ -6,7 +6,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Tech Charity - Empowering Through Technology',
+  title: 'AmiTech Charity - Bridging Gaps, Empowering Futures',
   description: 'Support our mission to empower communities through technology.',
 };
 
