@@ -6,7 +6,7 @@ const programs = [
   {
     title: 'Tech Empowerment',
     description: 'Equipping individuals with essential technology skills through hands-on coding, web development, and digital literacy training.',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop',
+    image: 'Empower.jpg',
     features: [
       'Interactive coding bootcamps',
       'Web & app development training',
@@ -17,7 +17,7 @@ const programs = [
   {
     title: 'Innovation Hub',
     description: 'A dynamic space fostering creativity, collaboration, and problem-solving, where innovators turn ideas into impactful tech solutions.',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop',
+    image: '/Innovation.jpg',
     features: [
       'State-of-the-art tech lab',
       'Industry mentorship & networking',
