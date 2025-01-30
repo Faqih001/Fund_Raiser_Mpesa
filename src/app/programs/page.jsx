@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const programs = [
   {
@@ -86,7 +87,7 @@ export default function ProgramsPage() {
                 src={program.image}
                 alt={program.title}
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg shadow-md"
               />
             </div>
 
@@ -117,27 +118,40 @@ export default function ProgramsPage() {
         ))}
       </div>
 
-      {/* FAQ Section */}
+      {/* FAQ Section with Animation */}
       <div className="mt-24 max-w-4xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-900 text-center">
           Frequently Asked Questions
         </h2>
         <div className="mt-8 space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-300">
+            <motion.div
+              key={index}
+              className="bg-white shadow-md rounded-xl"
+              whileHover={{ scale: 1.02 }}
+            >
               <button
-                className="w-full flex justify-between items-center py-4 text-lg font-medium text-left text-gray-700 focus:outline-none"
+                className="w-full flex justify-between items-center py-4 px-6 text-lg font-medium text-left text-gray-700 focus:outline-none"
                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
               >
                 {faq.question}
-                <span className="text-gray-500">
-                  {openFAQ === index ? '−' : '+'}
-                </span>
+                <motion.span
+                  className="text-gray-500"
+                  animate={{ rotate: openFAQ === index ? 180 : 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  ▼
+                </motion.span>
               </button>
-              {openFAQ === index && (
-                <p className="pb-4 text-gray-600">{faq.answer}</p>
-              )}
-            </div>
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={openFAQ === index ? { height: 'auto', opacity: 1 } : { height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden"
+              >
+                <p className="px-6 pb-4 text-gray-600">{faq.answer}</p>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>
