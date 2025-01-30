@@ -4,39 +4,40 @@ import Image from 'next/image';
 
 const programs = [
   {
-    title: 'Tech Education',
-    description: 'Comprehensive technology education programs designed to build strong foundations in programming, web development, and digital skills.',
+    title: 'Tech Empowerment',
+    description: 'Equipping individuals with essential technology skills through hands-on coding, web development, and digital literacy training.',
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop',
     features: [
-      'Hands-on coding workshops',
-      'Web development bootcamps',
-      'Digital literacy courses',
-      'Project-based learning'
+      'Interactive coding bootcamps',
+      'Web & app development training',
+      'AI & data science fundamentals',
+      'Project-based learning experiences'
     ]
   },
   {
     title: 'Innovation Hub',
-    description: 'A collaborative space where students can work on real-world projects, experiment with new technologies, and develop innovative solutions.',
+    description: 'A dynamic space fostering creativity, collaboration, and problem-solving, where innovators turn ideas into impactful tech solutions.',
     image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop',
     features: [
-      'Modern computer lab',
-      'Mentorship programs',
-      'Innovation workshops',
-      'Tech competitions'
+      'State-of-the-art tech lab',
+      'Industry mentorship & networking',
+      'Hackathons & startup incubation',
+      'Cutting-edge research projects'
     ]
   },
   {
-    title: 'Community Outreach',
-    description: 'Programs designed to bring technology education directly to underserved communities and make digital skills accessible to everyone.',
+    title: 'Tech for Communities',
+    description: 'Bridging the digital divide by making technology accessible through outreach programs, mobile labs, and digital literacy workshops.',
     image: 'https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=800&auto=format&fit=crop',
     features: [
-      'Mobile tech labs',
-      'Community workshops',
-      'Parent education',
-      'Digital inclusion initiatives'
+      'Mobile tech labs in remote areas',
+      'Inclusive digital training for all ages',
+      'Empowering women & youth in tech',
+      'Technology for social impact initiatives'
     ]
   }
 ];
+
 
 export default function ProgramsPage() {
   return (
