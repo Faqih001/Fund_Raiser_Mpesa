@@ -59,7 +59,7 @@ export default function HomePage() {
                   <div className="bg-white sm:mx-auto sm:w-full sm:max-w-md sm:overflow-hidden sm:rounded-lg">
                     <div className="relative h-64 sm:h-72 md:h-96 lg:h-full">
                       <Image
-                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                        src="/Tech.jpg"
                         alt="Tech education"
                         fill
                         priority
