@@ -19,8 +19,8 @@ export default function Footer() {
               <h3 className="text-2xl font-bold text-orange-600">AmiTech Charity</h3>
             </div>
             <p className="mt-4 text-base text-gray-600">
-              Empowering communities through technology. Join us in making a difference
-              by providing access to tech education and resources.
+              Transforming lives through technology. Together, we can break barriers and empower 
+              individuals with the tools and knowledge to thrive in a digital world.
             </p>
           </div>
 
