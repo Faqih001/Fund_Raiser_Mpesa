@@ -1,64 +1,85 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 
 export default function PaymentsPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 text-center">
-          Streamline your finances in one platform.
+        <h2 className="text-4xl font-bold text-gray-900 text-center leading-tight">
+          Streamline Your Finances with M-Pesa Payments
         </h2>
-        <p className="text-center text-gray-600 mt-2">
-          Move and use your funds with ease never felt before.
+        <p className="text-lg text-center text-gray-600 mt-4">
+          Simplify how you send, receive, and manage your funds with our easy-to-use platform. Experience the future of mobile payments today.
         </p>
 
         {/* M-Pesa Payment Section */}
-        <div className="mt-10 bg-blue-500 text-white p-6 rounded-lg">
-          <h3 className="text-xl font-semibold mb-4">M-Pesa Payments</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-white text-black p-4 rounded-lg shadow">
-              <h4 className="font-semibold">Instant Payments</h4>
-              <p className="text-sm">Send and receive payments instantly, with no delays, directly from your mobile phone.</p>
+        <div className="mt-10 bg-blue-500 text-white p-8 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-semibold mb-6">M-Pesa Payments</h3>
+          <p className="text-lg mb-4">
+            M-Pesa revolutionizes the way people handle payments. Here's why you should consider it for your financial transactions:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white text-black p-6 rounded-lg shadow-lg">
+              <h4 className="font-semibold text-xl">Instant Payments</h4>
+              <p className="text-sm mt-2">Send and receive payments instantly, anytime, directly from your mobile device. No delays, no hassle.</p>
             </div>
-            <div className="bg-white text-black p-4 rounded-lg shadow">
-              <h4 className="font-semibold">Wide Accessibility</h4>
-              <p className="text-sm">Access to a wide user base across Kenya and various other countries where M-Pesa is supported.</p>
+            <div className="bg-white text-black p-6 rounded-lg shadow-lg">
+              <h4 className="font-semibold text-xl">Wide Accessibility</h4>
+              <p className="text-sm mt-2">Reach millions of users across Kenya and other countries where M-Pesa is supported, making it easier to transact globally.</p>
             </div>
-            <div className="bg-white text-black p-4 rounded-lg shadow">
-              <h4 className="font-semibold">Secure Transactions</h4>
-              <p className="text-sm">Benefit from M-Pesa’s secure, encrypted platform, ensuring safe and reliable payments.</p>
+            <div className="bg-white text-black p-6 rounded-lg shadow-lg">
+              <h4 className="font-semibold text-xl">Secure Transactions</h4>
+              <p className="text-sm mt-2">Rest assured with M-Pesa's highly secure, encrypted platform, designed to ensure that your transactions are safe and reliable.</p>
             </div>
           </div>
         </div>
 
         {/* M-Pesa Benefits Section */}
-        <div className="mt-6 bg-white p-6 rounded-lg shadow">
-          <h3 className="text-xl font-semibold mb-4">Benefits of Using M-Pesa</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-gray-100 p-4 rounded-lg">
-              <h4 className="font-semibold">Low Transaction Fees</h4>
-              <p className="text-sm">Enjoy affordable fees for both local and international transactions, making M-Pesa a cost-effective payment option.</p>
+        <div className="mt-10 bg-white p-8 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-semibold mb-6">Why Choose M-Pesa?</h3>
+          <p className="text-lg text-gray-700 mb-6">
+            Discover the various benefits M-Pesa offers to users and businesses alike. M-Pesa isn't just about payments — it’s about creating a seamless financial experience.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h4 className="font-semibold text-xl">Low Transaction Fees</h4>
+              <p className="text-sm mt-2">M-Pesa offers affordable transaction fees, making it one of the most cost-effective ways to send money both locally and internationally.</p>
             </div>
-            <div className="bg-gray-100 p-4 rounded-lg">
-              <h4 className="font-semibold">Convenient Withdrawals</h4>
-              <p className="text-sm">Easily withdraw funds at thousands of M-Pesa agents and ATMs across the region, providing flexible access to cash.</p>
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h4 className="font-semibold text-xl">Convenient Withdrawals</h4>
+              <p className="text-sm mt-2">Withdraw your funds from thousands of M-Pesa agents, ATMs, and mobile money points across the region, giving you flexible access to cash anytime.</p>
             </div>
-            <div className="bg-gray-100 p-4 rounded-lg">
-              <h4 className="font-semibold">Mobile Integration</h4>
-              <p className="text-sm">M-Pesa’s seamless integration with mobile phones makes it incredibly easy for businesses and individuals to manage their finances on-the-go.</p>
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h4 className="font-semibold text-xl">Mobile Integration</h4>
+              <p className="text-sm mt-2">M-Pesa is fully integrated with your mobile phone, offering convenience and accessibility, whether you’re on the go or managing payments remotely.</p>
             </div>
-            <div className="bg-gray-100 p-4 rounded-lg">
-              <h4 className="font-semibold">Cashless Transactions</h4>
-              <p className="text-sm">Go cashless and reduce the risk of handling physical money with secure mobile payments anytime, anywhere.</p>
+            <div className="bg-gray-100 p-6 rounded-lg shadow">
+              <h4 className="font-semibold text-xl">Cashless Transactions</h4>
+              <p className="text-sm mt-2">Avoid handling physical cash with M-Pesa’s secure mobile payments system, reducing the risk of theft or loss while promoting a safer, cashless society.</p>
             </div>
           </div>
         </div>
 
         {/* How to Use M-Pesa Section */}
-        <div className="mt-6 text-center border border-gray-300 p-6 rounded-lg">
-          <h3 className="text-lg font-semibold">How to Use M-Pesa</h3>
-          <p className="text-sm text-gray-600">Quick and easy steps to start using M-Pesa for payments, transfers, and more.</p>
-          <div className="mt-2 flex justify-center gap-2">
-            <span className="text-xl">📱 Send Money 🏧 Withdraw Cash 💳 Pay Bills</span>
+        <div className="mt-10 bg-gray-200 p-8 rounded-lg shadow-lg text-center">
+          <h3 className="text-2xl font-semibold mb-4">How to Use M-Pesa</h3>
+          <p className="text-lg text-gray-700 mb-6">Getting started with M-Pesa is quick and easy. Follow these simple steps to send money, pay bills, and much more.</p>
+          <div className="flex justify-center gap-8">
+            <div className="bg-white text-black p-6 rounded-lg shadow">
+              <span className="text-3xl font-semibold">📱</span>
+              <h4 className="font-semibold text-xl mt-4">Send Money</h4>
+              <p className="text-sm mt-2">Transfer funds to anyone, anywhere, at any time with a few simple taps on your phone.</p>
+            </div>
+            <div className="bg-white text-black p-6 rounded-lg shadow">
+              <span className="text-3xl font-semibold">🏧</span>
+              <h4 className="font-semibold text-xl mt-4">Withdraw Cash</h4>
+              <p className="text-sm mt-2">Withdraw cash easily at thousands of agents or ATMs across the region. It’s fast, simple, and accessible.</p>
+            </div>
+            <div className="bg-white text-black p-6 rounded-lg shadow">
+              <span className="text-3xl font-semibold">💳</span>
+              <h4 className="font-semibold text-xl mt-4">Pay Bills</h4>
+              <p className="text-sm mt-2">Pay bills quickly and securely from your phone, saving time and avoiding long queues.</p>
+            </div>
           </div>
         </div>
       </div>
