@@ -8,7 +8,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand and Description */}
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold text-orange-600">AmiTech Charity</h3>
+            <div className="flex items-center">
+              <Image
+                src="/Amitech.png"
+                alt="AmiTech Logo"
+                width={40}  // Adjust the width as needed
+                height={40} // Adjust the height as needed
+                className="mr-4" // This adds a margin to the right of the logo
+              />
+              <h3 className="text-2xl font-bold text-orange-600">AmiTech Charity</h3>
+            </div>
             <p className="mt-4 text-base text-gray-600">
               Empowering communities through technology. Join us in making a difference
               by providing access to tech education and resources.
