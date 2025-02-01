@@ -13,6 +13,8 @@ export async function stkPushQuery(CheckoutRequestID) {
 
     // Short code obtained from .env file
     const shortcode = process.env.MPESA_SHORTCODE;
+
+    // Pass key obtained from .env file
     const passkey = process.env.MPESA_PASSKEY;
 
     // Generate password
