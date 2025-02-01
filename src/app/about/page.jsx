@@ -9,7 +9,7 @@ export default function AboutPage() {
         
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl p-12">
             About <span className="text-orange-600">AmiTech Charity</span>
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
