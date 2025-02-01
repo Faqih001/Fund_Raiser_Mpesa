@@ -124,15 +124,16 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <h2 className="text-4xl font-bold text-gray-900">🚀 Join Our Mission!</h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+        {/* Call to Action Banner */}
+        <div className="mt-16 bg-orange-600 text-white py-16 text-center rounded-2xl shadow-xl">
+          <h2 className="text-4xl font-extrabold">🚀 Join Our Mission!</h2>
+          <p className="mt-4 text-lg max-w-3xl mx-auto">
             Be part of the change! Support AmiTech Charity by donating, volunteering, or 
             partnering with us. Together, we can create a future where technology empowers 
             everyone.
           </p>
-          <button className="mt-6 px-6 py-3 bg-orange-600 text-white font-bold rounded-lg shadow-lg hover:bg-orange-700">
+          <button className="mt-6 px-8 py-3 bg-white text-orange-600 font-bold rounded-lg shadow-lg 
+                            hover:bg-gray-200 transition duration-300">
             Get Involved
           </button>
         </div>
