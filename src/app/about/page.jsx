@@ -9,12 +9,14 @@ export default function AboutPage() {
         
         {/* Header Section */}
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl p-12">
-            About <span className="text-orange-600">AmiTech Charity</span>
+          <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
+            About <span className="text-orange-600">AmiTech Charity</span> 💡
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Transforming lives through technology by providing education, tools, and opportunities 
-            for underserved communities to thrive in the digital world.
+            Transforming lives through technology 🚀. We empower underserved communities with 
+            the skills, resources, and opportunities needed to thrive in the digital age.  
+            <strong> Together, we break barriers and create a future where everyone has access 
+            to technology.</strong>
           </p>
         </div>
 
@@ -23,17 +25,21 @@ export default function AboutPage() {
           
           {/* Vision & Mission */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">Our Vision</h2>
+            <h2 className="text-3xl font-bold text-gray-900">🌟 Our Vision</h2>
             <p className="mt-4 text-lg text-gray-600">
               A world where <strong>everyone</strong> has the opportunity to learn, innovate, 
-              and succeed in the digital economy, regardless of their background.
+              and succeed in the digital economy, regardless of their background or circumstances.  
+              We believe that <span className="text-orange-600 font-semibold">technology should be 
+              a bridge, not a barrier</span> to success.
             </p>
 
-            <h2 className="mt-8 text-2xl font-bold text-gray-900">Our Mission</h2>
+            <h2 className="mt-8 text-3xl font-bold text-gray-900">🎯 Our Mission</h2>
             <p className="mt-4 text-lg text-gray-600">
-              To provide <strong>accessible, high-quality tech education</strong>, 
-              empowering communities to leverage technology for <strong>sustainable growth 
-              and innovation</strong>.
+              To provide <strong>accessible, high-quality tech education</strong>, equipping 
+              individuals with the skills needed to <span className="text-orange-600 font-semibold">
+              create, innovate, and lead</span> in a digital-first world.  
+              Through workshops, mentorship, and hands-on training, we empower 
+              communities to use technology for personal and economic growth.
             </p>
           </div>
 
@@ -52,13 +58,17 @@ export default function AboutPage() {
 
         {/* Core Values Section */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Our Core Values</h2>
+          <h2 className="text-4xl font-bold text-gray-900 text-center">🌍 Our Core Values</h2>
+          <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+            These principles guide everything we do at AmiTech Charity:
+          </p>
+
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Innovation", desc: "Encouraging creative solutions for tech accessibility." },
-              { title: "Inclusivity", desc: "Ensuring equal opportunities for all communities." },
-              { title: "Empowerment", desc: "Equipping individuals with digital skills for success." },
-              { title: "Collaboration", desc: "Partnering with organizations to expand our impact." }
+              { title: "🚀 Innovation", desc: "Encouraging creative solutions for tech accessibility." },
+              { title: "🌎 Inclusivity", desc: "Ensuring equal opportunities for all communities." },
+              { title: "📚 Empowerment", desc: "Equipping individuals with digital skills for success." },
+              { title: "🤝 Collaboration", desc: "Partnering with organizations to expand our impact." }
             ].map(({ title, desc }) => (
               <div key={title} className="rounded-lg bg-orange-50 p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-orange-600">{title}</h3>
@@ -70,54 +80,62 @@ export default function AboutPage() {
 
         {/* Our Impact Section */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">Our Impact</h2>
-          <div className="mt-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <h2 className="text-4xl font-bold text-gray-900 text-center">📊 Our Impact</h2>
+          <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+            Over the years, AmiTech Charity has made a real difference in countless lives:
+          </p>
+
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { stat: '5,000+', label: 'Students Trained' },
-              { stat: '20+', label: 'Communities Served' },
-              { stat: '95%', label: 'Success Rate' },
-              { stat: '50+', label: 'Partner Organizations' }
+              { stat: "5,000+", label: "Students Trained" },
+              { stat: "20+", label: "Communities Served" },
+              { stat: "95%", label: "Success Rate" },
+              { stat: "50+", label: "Partner Organizations" }
             ].map(({ stat, label }) => (
-              <div key={label} className="rounded-lg bg-orange-100 p-6 text-center shadow-md">
+              <div key={label} className="rounded-lg bg-orange-50 p-6 shadow-md text-center">
                 <p className="text-3xl font-bold text-orange-600">{stat}</p>
-                <p className="mt-2 text-lg text-gray-700">{label}</p>
+                <p className="mt-2 text-lg text-gray-600">{label}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* How We Make a Difference Section */}
+        {/* How We Make a Difference */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">How We Make a Difference</h2>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="text-4xl font-bold text-gray-900 text-center">💡 How We Make a Difference</h2>
+          <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+            Through key initiatives, we ensure technology reaches those who need it most:
+          </p>
+
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              {
-                title: "Tech Education",
-                desc: "Providing coding bootcamps, digital literacy, and STEM programs for all ages.",
-                img: "/Empower.jpg"
-              },
-              {
-                title: "Innovation Labs",
-                desc: "Offering collaborative spaces for creative problem-solving and hands-on learning.",
-                img: "/Innovation.jpg"
-              },
-              {
-                title: "Community Outreach",
-                desc: "Bringing technology resources and training to underserved communities.",
-                img: "/community.jpg"
-              }
-            ].map(({ title, desc, img }) => (
-              <div key={title} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <Image src={img} alt={title} width={400} height={250} className="w-full h-48 object-cover"/>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-                  <p className="mt-2 text-gray-600">{desc}</p>
-                </div>
+              { title: "💻 Digital Literacy", desc: "Providing hands-on training in essential digital skills." },
+              { title: "📡 Internet Access", desc: "Bridging the connectivity gap in underserved areas." },
+              { title: "👩‍💻 Women in Tech", desc: "Encouraging and supporting women in STEM careers." },
+              { title: "🎓 Youth Mentorship", desc: "Guiding young minds to explore tech opportunities." },
+              { title: "🌱 Tech for Sustainability", desc: "Leveraging technology for environmental solutions." },
+              { title: "🏫 School Partnerships", desc: "Integrating tech education into school curriculums." }
+            ].map(({ title, desc }) => (
+              <div key={title} className="rounded-lg bg-orange-50 p-6 shadow-md">
+                <h3 className="text-xl font-semibold text-orange-600">{title}</h3>
+                <p className="mt-2 text-gray-600">{desc}</p>
               </div>
             ))}
           </div>
         </div>
 
+        {/* Call to Action */}
+        <div className="mt-16 text-center">
+          <h2 className="text-4xl font-bold text-gray-900">🚀 Join Our Mission!</h2>
+          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+            Be part of the change! Support AmiTech Charity by donating, volunteering, or 
+            partnering with us. Together, we can create a future where technology empowers 
+            everyone.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-orange-600 text-white font-bold rounded-lg shadow-lg hover:bg-orange-700">
+            Get Involved
+          </button>
+        </div>
       </div>
     </div>
   );
