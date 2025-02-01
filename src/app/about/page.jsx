@@ -94,7 +94,7 @@ export default function AboutPage() {
               {
                 title: "Tech Education",
                 desc: "Providing coding bootcamps, digital literacy, and STEM programs for all ages.",
-                img: "/education.jpg"
+                img: "/Empower.jpg"
               },
               {
                 title: "Innovation Labs",
