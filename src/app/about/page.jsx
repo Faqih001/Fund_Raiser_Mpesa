@@ -133,9 +133,11 @@ export default function AboutPage() {
             partnering with us. Together, we can create a future where technology empowers 
             everyone.
           </p>
-          <button className="mt-6 px-8 py-3 bg-white text-orange-600 font-bold rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
-            Get Involved
-          </button>
+          <Link href="/donate">
+            <button className="mt-6 px-8 py-3 bg-white text-orange-600 font-bold rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
+              Get Involved
+            </button>
+          </Link>
         </div>
       </div>
     </div>
