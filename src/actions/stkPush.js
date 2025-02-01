@@ -52,6 +52,7 @@ export async function sendStkPush(formData) {
       }
     );
 
+    // Access Token from Safaricom API
     const accessToken = tokenResponse.data.access_token;
 
     // Make STK push request
