@@ -11,6 +11,7 @@ export async function stkPushQuery(CheckoutRequestID) {
       .replace(/[^0-9]/g, "")
       .slice(0, -3);
 
+    // Short code obtained from .env file
     const shortcode = process.env.MPESA_SHORTCODE;
     const passkey = process.env.MPESA_PASSKEY;
 
