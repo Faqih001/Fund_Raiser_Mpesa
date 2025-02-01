@@ -2,6 +2,7 @@
 
 import axios from "axios";
 
+// Function to query the status of an STK push request
 export async function stkPushQuery(CheckoutRequestID) {
   try {
     // Generate timestamp
