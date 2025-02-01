@@ -104,7 +104,7 @@ export default function AboutPage() {
               {
                 title: "Community Outreach",
                 desc: "Bringing technology resources and training to underserved communities.",
-                img: "/outreach.jpg"
+                img: "/community.jpg"
               }
             ].map(({ title, desc, img }) => (
               <div key={title} className="bg-white rounded-lg shadow-md overflow-hidden">
