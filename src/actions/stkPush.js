@@ -28,6 +28,8 @@ export async function sendStkPush(formData) {
 
     // Short code obtained from .env file 
     const shortcode = process.env.MPESA_SHORTCODE;
+
+    // Passkey obtained from .env file 
     const passkey = process.env.MPESA_PASSKEY;
 
     // Generate password
