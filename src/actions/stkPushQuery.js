@@ -37,6 +37,7 @@ export async function stkPushQuery(CheckoutRequestID) {
       }
     );
 
+    // Access Token from Safaricom API
     const accessToken = tokenResponse.data.access_token;
 
     // Make query request
