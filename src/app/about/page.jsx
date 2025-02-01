@@ -99,7 +99,7 @@ export default function AboutPage() {
               {
                 title: "Innovation Labs",
                 desc: "Offering collaborative spaces for creative problem-solving and hands-on learning.",
-                img: "/innovation.jpg"
+                img: "/Innovation.jpg"
               },
               {
                 title: "Community Outreach",
