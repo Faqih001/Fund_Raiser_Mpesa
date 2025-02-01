@@ -5,6 +5,8 @@ import { createDonation } from "@/services/donationService";
 
 // Send STK Push function to initiate M-Pesa payment request and handle response from Safaricom API 
 export async function sendStkPush(formData) {
+
+  // Extract form data from request body
   try {
     const { mpesa_number: phoneNumber, amount, name } = formData;
 
