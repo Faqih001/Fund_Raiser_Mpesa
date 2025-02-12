@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 
+// Function to GET clients from client database
 export async function GET() {
   try {
     const client = await clientPromise;
@@ -16,7 +17,7 @@ export async function GET() {
     if (!latestPending || latestPending.length === 0) {
       return NextResponse.json(
         { error: 'No pending donations found' },
-        { status: 404 }
+        { status: 404 } 
       );
     }
 
