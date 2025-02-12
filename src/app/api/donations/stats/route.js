@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getDonationStats } from '@/services/donationService';
 
+// Function to GET donation stats
 export async function GET() {
   try {
     const stats = await getDonationStats();
