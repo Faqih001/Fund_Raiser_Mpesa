@@ -10,6 +10,7 @@ export async function GET(request) {
     const checkoutRequestId = searchParams.get('id');
     const mpesaCode = searchParams.get('code');
 
+    // If checkoutRequestId or mpesaCode is missing, return 400 error
     if (!checkoutRequestId || !mpesaCode) {
       return NextResponse.json(
         { error: 'Missing id or code parameter' },
