@@ -10,6 +10,7 @@ export async function GET() {
     const stats = await getDonationStats();
     return NextResponse.json(stats);
   } catch (error) {
+    // Log and return error message
     console.error('Error fetching donation stats:', error);
     return NextResponse.json(
       { error: 'Failed to fetch donation stats' },
