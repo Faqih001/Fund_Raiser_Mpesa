@@ -17,6 +17,7 @@ export async function GET() {
       .limit(1)
       .toArray();
 
+    // If no pending donations found, return 404 error
     if (!latestPending || latestPending.length === 0) {
       return NextResponse.json(
         { error: 'No pending donations found' },
