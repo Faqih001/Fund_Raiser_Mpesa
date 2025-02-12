@@ -16,6 +16,7 @@ export async function POST(request) {
       );
     }
 
+    // Update donation status to completed
     const updateResult = await updateDonationByCheckoutId(checkoutRequestId, {
       status: 'completed',
       mpesaCode,
