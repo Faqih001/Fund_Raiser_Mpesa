@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { updateDonationByCheckoutId } from '@/services/donationService';
 
+// Function to update donation status by checkoutRequestId and mpesaCode
 export async function GET(request) {
   try {
     const { searchParams } = new URL(request.url);
