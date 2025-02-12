@@ -8,6 +8,7 @@ export async function POST(request) {
     // Get checkoutRequestId and mpesaCode from request body
     const { checkoutRequestId, mpesaCode } = await request.json();
 
+    // If checkoutRequestId or mpesaCode is missing, return 400 error
     if (!checkoutRequestId || !mpesaCode) {
       return NextResponse.json(
         { error: 'Missing required fields' },
