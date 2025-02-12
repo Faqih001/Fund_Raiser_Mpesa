@@ -25,6 +25,7 @@ export async function GET() {
       );
     }
 
+    // Return the most recent pending donation
     return NextResponse.json({
       success: true,
       donation: {
