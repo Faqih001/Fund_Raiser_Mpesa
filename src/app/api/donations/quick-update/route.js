@@ -25,6 +25,7 @@ export async function GET(request) {
       transactionDate: new Date().toISOString(),
     });
 
+    // Return success message with update status
     return NextResponse.json({ success: true, updated: updateResult.modifiedCount > 0 });
   } catch (error) {
     console.error('Quick update error:', error);
