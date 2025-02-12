@@ -4,7 +4,7 @@ import clientPromise from '@/lib/mongodb';
 // Function to GET clients from client database
 export async function GET() {
 
-  // Try catch for client
+  // Try catch for client database connection error handling 
   try {
     
     const client = await clientPromise;
