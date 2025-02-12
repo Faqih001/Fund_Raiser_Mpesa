@@ -3,6 +3,7 @@ import { updateDonationByCheckoutId } from '@/services/donationService';
 
 // Function to update donation status by checkoutRequestId and mpesaCode
 export async function POST(request) {
+  // Try catch for quick update error handling
   try {
     const { checkoutRequestId, mpesaCode } = await request.json();
 
