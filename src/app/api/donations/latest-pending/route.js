@@ -6,7 +6,7 @@ export async function GET() {
 
   // Try catch for client database connection error handling 
   try {
-    
+    // Connect to client database 
     const client = await clientPromise;
     const db = client.db();
 
