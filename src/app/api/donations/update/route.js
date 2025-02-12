@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { updateDonationByCheckoutId } from '@/services/donationService';
 
+// Function to update donation status by checkoutRequestId and mpesaCode
 export async function POST(request) {
   try {
     const { checkoutRequestId, mpesaCode } = await request.json();
