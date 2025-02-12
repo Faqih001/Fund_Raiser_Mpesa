@@ -6,6 +6,7 @@ export async function GET() {
 
   // Try catch for donation stats error handling
   try {
+    // Get donation stats
     const stats = await getDonationStats();
     return NextResponse.json(stats);
   } catch (error) {
