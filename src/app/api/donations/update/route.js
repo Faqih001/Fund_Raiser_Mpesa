@@ -5,6 +5,7 @@ import { updateDonationByCheckoutId } from '@/services/donationService';
 export async function POST(request) {
   // Try catch for quick update error handling
   try {
+    // Get checkoutRequestId and mpesaCode from request body
     const { checkoutRequestId, mpesaCode } = await request.json();
 
     if (!checkoutRequestId || !mpesaCode) {
