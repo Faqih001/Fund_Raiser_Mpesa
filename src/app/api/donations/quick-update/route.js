@@ -5,6 +5,7 @@ import { updateDonationByCheckoutId } from '@/services/donationService';
 export async function GET(request) {
   // Try catch for quick update error handling
   try {
+    // Get checkoutRequestId and mpesaCode from URL search parameters
     const { searchParams } = new URL(request.url);
     const checkoutRequestId = searchParams.get('id');
     const mpesaCode = searchParams.get('code');
